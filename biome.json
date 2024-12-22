@@ -1,0 +1,89 @@
+{
+    "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+    "files": {
+      "include": ["*.js", "*.ts", "*.tsx", "*.json"]
+    },
+    "formatter": {
+      "formatWithErrors": true,
+      "indentStyle": "space",
+      "indentWidth": 2,
+      "lineEnding": "lf",
+      "lineWidth": 100
+    },
+    "organizeImports": { "enabled": false },
+    "linter": {
+      "enabled": true,
+      "rules": {
+        "recommended": false,
+        "a11y": { "useKeyWithClickEvents": "off", "useValidAnchor": "off" },
+        "complexity": {
+          "noExtraBooleanCast": "off",
+          "noForEach": "off",
+          "noUselessTypeConstraint": "error",
+          "useOptionalChain": "off"
+        },
+        "correctness": {
+          "noUnusedVariables": "error",
+          "useArrayLiterals": "off",
+          "useExhaustiveDependencies": "off"
+        },
+        "performance": { "noAccumulatingSpread": "off", "noDelete": "off" },
+        "style": {
+          "noNamespace": "error",
+          "noNonNullAssertion": "off",
+          "useAsConstAssertion": "error",
+          "useNumberNamespace": "off"
+        },
+        "suspicious": {
+          "noAssignInExpressions": "off",
+          "noConfusingVoidType": "off",
+          "noExplicitAny": "off",
+          "noExtraNonNullAssertion": "error",
+          "noMisleadingInstantiator": "error",
+          "noUnsafeDeclarationMerging": "error",
+          "useNamespaceKeyword": "error"
+        }
+      }
+    },
+    "javascript": {
+      "formatter": {
+        "jsxQuoteStyle": "single",
+        "trailingCommas": "none",
+        "semicolons": "always",
+        "quoteStyle": "single"
+      }
+    },
+    "overrides": [
+      {
+        "include": ["*.ts", "*.tsx", "*.mts", "*.cts"],
+        "linter": {
+          "rules": {
+            "correctness": {
+              "noConstAssign": "off",
+              "noGlobalObjectCalls": "off",
+              "noInvalidBuiltinInstantiation": "off",
+              "noInvalidConstructorSuper": "off",
+              "noNewSymbol": "off",
+              "noSetterReturn": "off",
+              "noUndeclaredVariables": "off",
+              "noUnreachable": "off",
+              "noUnreachableSuper": "off"
+            },
+            "style": { "noArguments": "error", "noVar": "error", "useConst": "error" },
+            "suspicious": {
+              "noClassAssign": "off",
+              "noDuplicateClassMembers": "off",
+              "noDuplicateObjectKeys": "off",
+              "noDuplicateParameters": "off",
+              "noFunctionAssign": "off",
+              "noImportAssign": "off",
+              "noRedeclare": "off",
+              "noUnsafeNegation": "off",
+              "useGetterReturn": "off"
+            }
+          }
+        }
+      }
+    ]
+  }
+  

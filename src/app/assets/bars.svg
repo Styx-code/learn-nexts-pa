@@ -1,0 +1,8 @@
+<svg width="40" height="30" viewBox="0 0 40 30" xmlns="http://www.w3.org/2000/svg">
+  <!-- Top bar -->
+  <rect x="0" y="0" width="40" height="5" fill="#000"/>
+  <!-- Middle bar -->
+  <rect x="0" y="12" width="40" height="5" fill="#000"/>
+  <!-- Bottom bar -->
+  <rect x="0" y="24" width="40" height="5" fill="#000"/>
+</svg>
